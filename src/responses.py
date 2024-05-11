@@ -5,7 +5,7 @@ from classification import Long_Q_segment, segment_posts
  
 def get_response(user_input: str, roles)->str:
     #pattern to catch questions
-    regex_pattern = r'(?i)\b(question|any |anyone|is there|questions|ask|problems|\?|problem|trying|familiar|who|which|here|Any|anyone|one|any body|anybody|who|what|where|when|why|how|can|could|may|might|do|does|did|help|assist|guide|solve|troubleshoot|error|issue|problem|bug|fix)\b(?:\W+\w+){1,99}'
+    regex_pattern = r'(?i)^(?!.*\b(?:ideas|can i get|idea|suggestions|suggestion|recommendation|recommendations|who|what|where|when|why|how)\b)(?=(?:\b\w+\b\s+){4,}).*\b(?:question|any|where|anyone|is there|questions|ask|problems|does|problem|trying|familiar|can i|help|assist|guide|solve|troubleshoot|error|issue|problem|bug|fix|who|which|here|Any|anyone|one|any body|anybody)\b.*$'
 
     question:str=user_input
     match:bool=re.search(regex_pattern,question)
