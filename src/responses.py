@@ -5,7 +5,7 @@ from classification import Long_Q_segment, segment_posts
  
 def get_response(user_input: str, roles)->str:
     #pattern to catch questions
-    regex_pattern = r'(?i)^(?!.*\b(?:ideas|can i get|idea|suggestions|suggestion|recommendation|recommendations|who|what|where|when|why|how)\b)(?=(?:\b\w+\b\s+){4,}).*\b(?:question|any|where|anyone|is there|questions|ask|problems|does|problem|trying|familiar|can i|help|assist|guide|solve|troubleshoot|error|issue|problem|bug|fix|who|which|here|Any|anyone|one|any body|anybody)\b.*$'
+    regex_pattern = r'(?i)^(?!.*\b(?:ideas|know if|details|opinion|understand|can i get|share|idea|suggestions|suggestion|recommendation|recommendations|who|what|where|when|why|how)\b)(?=(?:\b\w+\b\s+){2,}).*\b(?:question|is it|any|where|anyone|is there|questions|ask|problems|does|problem|trying|familiar|can i|help|assist|guide|solve|troubleshoot|error|issue|problem|bug|fix|who|which|here|any|anyone|one|any body|anybody)\b.*$'
 
     question:str=user_input
     match:bool=re.search(regex_pattern,question)
@@ -13,8 +13,8 @@ def get_response(user_input: str, roles)->str:
  
      
 
-    if match or question_mark : #if the question matches the initial regex gate (it is ia question)
-        decision= Long_Q_segment(segment_posts(question, ave_len=12))
+    if match: #if the question matches the initial regex gate (it is ia question)
+        decision= Long_Q_segment(segment_posts(question, ave_len=5))
 
         if decision == 'PERMISSION':
             embed = discord.Embed(

@@ -49,7 +49,6 @@ async def on_message(message: Message) -> None:
         return
     current_time = datetime.now(timezone.utc)  # Make the current time timezone-aware
     days_since_join = (current_time - message.author.joined_at.replace(tzinfo=timezone.utc)).days
-    threshold_days = 15  # Adjust this threshold as needed
 
 
      # Check if the message is from a new member
@@ -58,7 +57,7 @@ async def on_message(message: Message) -> None:
 
         current_time = datetime.now(timezone.utc)  # Make the current time timezone-aware
         days_since_join = (current_time - message.author.joined_at.replace(tzinfo=timezone.utc)).days
-        threshold_days = 1999  # Adjust this threshold as needed
+        threshold_days = 9992  # Adjust this threshold as needed
 
         username: str = str(message.author)
         user_message: str = message.content
