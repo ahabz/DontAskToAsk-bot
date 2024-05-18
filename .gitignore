@@ -1,2 +1,3 @@
 /src/.env
 .Ds_Store
+__pycache__/
