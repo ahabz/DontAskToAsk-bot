@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dontasktoask-bot"
+version = "0.1.0"
+description = "bot to moderate asktoask questions"
+authors = ["ihab A. <ihabamdras@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+joblib = "^1.4.2"
+loguru = "^0.7.2"
+discord = "^2.3.2"
+dotenv = "^0.21.0"
+sklearn = "^1.2.2"
+numpy = "^1.26.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
