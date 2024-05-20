@@ -4,6 +4,7 @@ from responses import get_response
 from loguru import logger
 from datetime import datetime, timezone
 from config import Config
+from db.init_db import init_database
 
 logger.add(
     "logs/main.log",
@@ -28,16 +29,16 @@ async def send_message(message: Message, user_message: str) -> None:
         logger.debug("Message was empty because intents were not enabled")
         return
 
-    response: str = get_response(user_message, message.author.mention)
+    response: str = await get_response(user_message, message.author.mention)
     if response != "":
         await message.channel.send(embed=response)
-    else:
-        return
+    
 
 
 # HANDLING THE STARTUP FOR OUR BOT
 @client.event
 async def on_ready() -> None:
+    await init_database()
     logger.success(f"{client.user} is now running!")
 
 
@@ -50,7 +51,7 @@ async def on_message(message: Message) -> None:
     days_since_join = (
         current_time - message.author.joined_at.replace(tzinfo=timezone.utc)
     ).days
-    threshold_days = 5  # threshold in days for bot interaction
+    threshold_days = 15  # threshold in days for bot interaction
 
     # Check if the message is from a new member
     if message.author.joined_at:

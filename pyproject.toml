@@ -14,8 +14,6 @@ dotenv = "^0.21.0"
 sklearn = "^1.2.2"
 numpy = "^1.26.3"
 
-
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

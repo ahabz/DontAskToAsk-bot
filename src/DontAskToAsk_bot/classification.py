@@ -1,10 +1,9 @@
 from collections import Counter
 from config import Config
 import warnings
-
-warnings.filterwarnings("ignore")
 import joblib
 from loguru import logger
+warnings.filterwarnings("ignore")
 
 logger.add(
     "logs/main.log",
@@ -63,7 +62,7 @@ def segment_posts(test_str, ave_len=12):
     # Calculate the number of dividers
     num_dividers = round(len(big_str) / ave_len)
     # Calculate the remainder
-    remainder = len(big_str) % ave_len
+    len(big_str) % ave_len
     # Calculate the length of each segment
     segment_length = len(big_str) // num_dividers
 

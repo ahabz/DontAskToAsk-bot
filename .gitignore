@@ -1,9 +1,26 @@
-<<<<<<< HEAD
+# Ignore .env files
 .env
-.Ds_Store
+
+# Ignore directories
+node_modules/
+dist/
+build/
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Python compiled files
 __pycache__/
-=======
-.env
-.Ds_Store
-__pycache__/
->>>>>>> f18a9be (Research directory added)
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+
+# Ignore all files ending with .env
+*.env
