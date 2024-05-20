@@ -10,7 +10,7 @@ build/
 *.log
 
 # Ignore OS generated files
-.DS_Store
+*.DS_Store
 Thumbs.db
 
 # Ignore Python compiled files
