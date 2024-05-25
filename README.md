@@ -74,9 +74,10 @@ A bot that identifies these types of questions and encourages users to directly 
 
 ## Repository Structure
 - **Folders**:
-  - `data`: Contains datasets of raw and preprocessed data
-  - `eda`: Exploratory Data Analysis scripts and notebooks
-  - `backup`: Backups of sections of the datasets
+  -`Research`:
+    - `data`: Contains datasets of raw and preprocessed data
+    - `notebooks/moedls`: Notebooks conataining Exploratory Data Analysis and model training and testing
+    - `scraping`:notebooks containing scripts for scraping questions, sanity checking the results and storing them.
 - **Scripts**:
   - Data scraping
   - Data preprocessing
@@ -86,14 +87,6 @@ A bot that identifies these types of questions and encourages users to directly 
 ## License
 This project is licensed under a custom license allowing free use but not for financial gain.
 
-## Documentation
-- **ReadMe**:
-  - Project overview
-  - Installation instructions
-  - Usage guidelines
-  - Contribution instructions
-- **GitHub**:
-  - Detailed repository with code and documentation
 
 ## Future Improvements
 - **Enhancements**:
