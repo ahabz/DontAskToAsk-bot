@@ -19,9 +19,10 @@ A bot that identifies these types of questions and encourages users to directly 
 ## Features
 - Detects "AskToAsk" questions.
 - Provides prompts to users to directly ask their questions.
+- Will Only respond to newcomers in your server(*2 responses max per user to avoid spam*)
 - Uses machine learning for classification.
 - Regex filtering for initial screening.
-
+  
 ## Tools and Technologies
 - **Programming Languages**: Python
 - **Libraries**:
