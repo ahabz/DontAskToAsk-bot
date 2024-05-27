@@ -1,7 +1,7 @@
 # Don't Ask to Ask Bot
 
 ## Project Overview
-A Discord bot that detects 'AskToAsk' questions and prompts users with guidelines on how to ask their questions directly.
+A Discord bot that detects 'AskToAsk' questions using machine learning and prompts users with guidelines on how to ask their questions directly.
 
 ## Concept
 ### Problem
