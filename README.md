@@ -77,7 +77,7 @@ A bot that identifies these types of questions and encourages users to directly 
 - **Folders**:
   -`Research`:
     - `data`: Contains datasets of raw and preprocessed data
-    - `notebooks/moedls`: Notebooks conataining Exploratory Data Analysis and model training and testing
+    - `notebooks/models`: Notebooks containing Exploratory Data Analysis and model training and testing
     - `scraping`:notebooks containing scripts for scraping questions, sanity checking the results and storing them.
 - **Scripts**:
   - Data scraping
