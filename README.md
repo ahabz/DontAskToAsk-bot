@@ -19,7 +19,7 @@ A bot that identifies these types of questions and encourages users to directly 
 ## How To Use:
 - You can invite the bot to your personal server using this [Bot Invitation Link](https://discord.com/oauth2/authorize?client_id=1235240271994814464&permissions=274878032960&scope=bot).
 
-- Or you can test it out on our [Discord testing server](https://discord.gg/Ka6THHvc8j).
+- Or you can test it out on our [Discord Community server](https://discord.gg/Ka6THHvc8j).
 
 
 ## Features
