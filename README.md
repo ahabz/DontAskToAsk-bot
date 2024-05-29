@@ -86,7 +86,7 @@ A bot that identifies these types of questions and encourages users to directly 
   - Bot interaction and deployment scripts
 
 ## License
-This project is licensed under a custom license allowing free use but not for financial gain.
+This project is licensed under the MIT License.
 
 
 ## Future Improvements
