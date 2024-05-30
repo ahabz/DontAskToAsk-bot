@@ -16,10 +16,22 @@ pookiebear827: Anyone familiar with Y?
 ### Solution
 A bot that identifies these types of questions and encourages users to directly ask their questions.
 
-## How To Use:
-- You can invite the bot to your personal server using this [Bot Invitation Link](https://discord.com/oauth2/authorize?client_id=1235240271994814464&permissions=274878032960&scope=bot).
 
-- Or you can test it out on our [Discord Community server](https://discord.gg/Ka6THHvc8j).
+
+Sure, here's a revised version with clearer instructions:
+
+## How To Use:
+To get started with the Don't Ask to Ask Bot, you have two easy options:
+
+1. **Invite the Bot to Your Server**:
+   - Click on this [Bot Invitation Link](https://discord.com/oauth2/authorize?client_id=1235240271994814464&permissions=274878032960&scope=bot).
+   - Follow the prompts to select your server and authorize the bot. No setup required—it's ready to use immediately!
+
+2. **Test the Bot in Our Community Server**:
+   - Join our [Discord Community server](https://discord.gg/Ka6THHvc8j).to see the bot in action.
+   - You can interact with the bot and see how it responds to 'AskToAsk' questions without any installation.
+
+No complicated setup is needed. Just invite the bot to your server or test it in ours!
 
 
 ## Features
